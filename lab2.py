@@ -52,8 +52,8 @@ def publisher_thread():
             print 'xp in thread', xp
             vel_msg = Twist()
             k1= 0.6
-            k2= 1.6
-            k3= -1
+            k2= 5
+            k3= -3.5
             rho= math.sqrt((xg-xp)**2+(yg-yp)**2)
             alpha= -thep + math.atan2((yg-yp),(xg-xp))
             beta= thego - math.atan2((yg-yp),(xg-xp))
